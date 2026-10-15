@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>PELock.LuaVirtualizer</RootNamespace>
+    <AssemblyName>PELock.LuaVirtualizer</AssemblyName>
+
+    <!-- NuGet packaging -->
+    <PackageId>PELock.LuaVirtualizer</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Bartosz Wójcik</Authors>
+    <Company>PELock</Company>
+    <Description>Lua Virtualizer Web API client for .NET — obfuscate and protect Lua .lua source code via the PELock Lua Virtualizer service.</Description>
+    <PackageTags>lua;obfuscator;virtualizer;pelock;protection</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://www.pelock.com/products/lua-virtualizer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PELock/Lua-Virtualizer-CSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en</NeutralLanguage>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <!-- NuGet output: repository root ("SDK main directory") -->
+    <PackageOutputPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..'))</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+  </ItemGroup>
+
+</Project>

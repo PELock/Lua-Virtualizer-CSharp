@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Examples</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\LuaVirtualizer\LuaVirtualizer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="lua-virtualizer-example-is-demo.cs" />
+  </ItemGroup>
+
+</Project>
